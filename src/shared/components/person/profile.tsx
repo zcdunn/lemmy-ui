@@ -676,7 +676,7 @@ export class Profile extends Component<any, ProfileState> {
               <div className="card border-secondary mb-3">
                 <div className="card-body">
                   <h5>{i18n.t("moderates")}</h5>
-                  <ul className="list-unstyled mb-0">
+                  <ul className="list-unstyled mb-0 list-flex-v">
                     {moderates.map(cmv => (
                       <li key={cmv.community.id}>
                         <CommunityLink community={cmv.community} />
@@ -704,7 +704,7 @@ export class Profile extends Component<any, ProfileState> {
               <div className="card border-secondary mb-3">
                 <div className="card-body">
                   <h5>{i18n.t("subscribed")}</h5>
-                  <ul className="list-unstyled mb-0">
+                  <ul className="list-unstyled mb-0 list-flex-v">
                     {follows.map(cfv => (
                       <li key={cfv.community.id}>
                         <CommunityLink community={cfv.community} />
