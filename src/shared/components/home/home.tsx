@@ -493,7 +493,7 @@ export class Home extends Component<any, HomeState> {
             </Link>
           </T>
         </h5>
-        <ul className="list-inline mb-0">
+        <ul className="list-inline mb-0 list-flex-v">
           {this.state.trendingCommunities.map(cv => (
             <li
               key={cv.community.id}
@@ -531,7 +531,7 @@ export class Home extends Component<any, HomeState> {
           </button>
         </h5>
         {!this.state.subscribedCollapsed && (
-          <ul className="list-inline mb-0">
+          <ul className="list-inline mb-0 list-flex-v">
             {UserService.Instance.myUserInfo
               .map(m => m.follows)
               .unwrapOr([])
